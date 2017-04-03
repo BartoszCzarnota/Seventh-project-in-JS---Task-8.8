@@ -1,15 +1,11 @@
 // plik scripts.js
 
-function rysujChoinke(x) {
-	
-	for (var y = 0 ; y < x ; y++) {
-			var star = '*';
-		
-		for (var z = 0 ; z < y*2-1 ; z++) {
-				var star = star + '*';
-		}
-		console.log(star)
-	}		
-}
+var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.';
+	animal = ('Zielone słonie').toUpperCase();
+	//elephantsUpperCased = animal.toUpperCase();
+	animalReplace = text.replace('Papugi', animal)
+	//halfSentence = animalReplace.slice(0, 45);
 
-rysujChoinke(5);
+console.log(text);
+//console.log(halfSentence);
+console.log(animalReplace.substr(0, animalReplace.length/2));
